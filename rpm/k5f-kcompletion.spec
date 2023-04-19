@@ -65,6 +65,7 @@ popd
 
 %doc README.md
 %license LICENSES/*.txt
+%{_opt_kf5_datadir}/locale/
 %{_opt_kf5_datadir}/qlogging-categories5/%{framework}.*
 %{_opt_kf5_libdir}/libKF5Completion.so.*
 %{_opt_kf5_qtplugindir}/designer/*5widgets.so
