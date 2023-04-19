@@ -37,7 +37,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%autosetup -n %{name}-%{version} -p1
+%autosetup -n %{name}-%{version}/upstream -p1
 
 %build
 export QTDIR=%{_opt_qt5_prefix}
@@ -55,8 +55,6 @@ popd
 pushd build
 make DESTDIR=%{buildroot} install
 popd
-
-%find_lang_kf5 kcompletion5_qt
 
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
