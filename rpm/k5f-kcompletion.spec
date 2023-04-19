@@ -37,7 +37,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%autosetup -n %{framework}-%{version} -p1
+%autosetup -n %{name}-%{version} -p1
 
 %build
 export QTDIR=%{_opt_qt5_prefix}
