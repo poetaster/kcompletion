@@ -56,9 +56,10 @@ pushd build
 make DESTDIR=%{buildroot} install
 popd
 
+%find_lang_kf5 kcompletion5_qt
+
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
-
 
 %files 
 
