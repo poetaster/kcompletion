@@ -15,9 +15,9 @@ Source0: 		%{name}-%{version}.tar.bz2
 ## upstream fixes
 
 BuildRequires:  opt-extra-cmake-modules >= %{kf5_version}
+BuildRequires:  opt-kf5-rpm-macros >= %{kf5_version}
 BuildRequires:  opt-kf5-kconfig-devel 
 BuildRequires:  opt-kf5-kwidgetsaddons-devel
-BuildRequires:  opt-kf5-rpm-macros
 BuildRequires:  opt-qt5-qtbase-devel
 BuildRequires:  opt-qt5-qttools-devel
 
@@ -71,7 +71,7 @@ popd
 
 %files devel
 
-%{_opt_kf5_includedir}/KCompletion/
+%{_opt_kf5_includedir}/KF5/KCompletion/
 %{_opt_kf5_libdir}/libKF5Completion.so
 %{_opt_kf5_libdir}/cmake/KF5Completion/
 %{_opt_kf5_archdatadir}/mkspecs/modules/qt_KCompletion.pri
