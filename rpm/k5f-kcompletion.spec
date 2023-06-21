@@ -1,8 +1,8 @@
-%global kf5_version 5.106.0
+%global kf5_version 5.107.0
 %global framework kcompletion
 
 Name: 			opt-kf5-kcompletion
-Version: 5.106.0
+Version: 5.107.0
 Release: 		1%{?dist}
 Summary:        KDE Frameworks 5 Tier 2 addon with auto completion widgets and classes
 
